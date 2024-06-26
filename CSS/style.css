@@ -17,24 +17,33 @@
     src: url(../Fonts/Raleway-Regular.woff2);
     src: url(../Fonts/Raleway-Regular.ttf) format('truetype');
 }
-
-* {
+body{
     width: 1160px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: medium solid #782221;
 }
 
 p {
     font-family: Raleway Regular;
+    font-size: 1rem;
 }
 
-ul {
+li {
     font-family: Raleway Regular;
+    font-size: 1rem;
 }
 
-h2 {
+h1{
     font-family: Lato;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
 }
- 
-header {
+
+header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,11 +51,11 @@ header {
 }
 
 figure {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
-img {
+#profile_picture {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -54,31 +63,103 @@ img {
     box-shadow: 0 0 30px red;
 }
 
-h1{
-    font-family: Lato;
+header p {
     color: white;
-    text-transform: uppercase;
-    font-size: 1rem;
-    text-align: center;
-}
-
-header > p {
-    color: white;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 75px;
-    background-color: black;
+    background-color: #2c1d27;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
-nav > a {
+nav a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
+}
+
+h2 {
+    font-family: Lato;
+    font-size: 1.5rem;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+#about_me {
+    background-color: #782221;
+    font-family: Raleway Regular;
+    font-size: 1rem;
+    flex-basis: 30%;
+}
+ 
+#about_me p {
+    text-indent: 10%;
+    color: white;
+    text-align: justify;
+    margin-right: 45px;
+    margin-left: 25px;
+}
+
+#about_me li {
+    color: white;
+}
+
+#about_me h2 {
+    background-color: #dbc2a4;
+    margin-right: 40px;
+    padding-left: 25px;
+}
+
+#jobs {
+    margin-left: 30px;
+}
+
+#jobs h2 {
+    background-color: #dbc2a4;
+    border-left: 7px solid #782221;
+    width: 750px;
+    padding-left: 5px;
+}
+
+h3 {
+    font-family: Lato;
+    font-size: 1rem;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+footer {
+    background-color: #782221;
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav {
+    background-color: #782221;
+}
+
+footer a {
+    margin-left: 10px;
+}
+
+small {
+    font-family: Raleway Regular;
+    font-size: 0.75rem;
 }
