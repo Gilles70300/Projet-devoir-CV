@@ -1,0 +1,19 @@
+article:hover {
+    border-right: thick solid #782221;
+}
+
+div:hover {
+    border-right: thick solid #782221;
+}
+
+header a:hover {
+    cursor: zoom-in;
+}
+
+footer a:hover{
+    opacity: 0.5;
+}
+
+nav :hover{
+    text-decoration: underline;
+}
