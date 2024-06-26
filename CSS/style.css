@@ -19,6 +19,7 @@
 }
 body{
     width: 1160px;
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     border-right: medium solid #782221;
@@ -29,7 +30,7 @@ p {
     font-size: 1rem;
 }
 
-ul {
+li {
     font-family: Raleway Regular;
     font-size: 1rem;
 }
@@ -110,7 +111,7 @@ main{
     margin-left: 25px;
 }
 
-#about_me ul {
+#about_me li {
     color: white;
 }
 
@@ -133,11 +134,12 @@ main{
 
 h3 {
     font-family: Lato;
+    font-size: 1rem;
 }
 
 img {
-    width: 16px;
-    height: 16px;
+    width: 25px;
+    height: 25px;
 }
 
 footer {
@@ -145,7 +147,19 @@ footer {
     color: white;
     height: 100px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+}
+
+footer nav {
+    background-color: #782221;
+}
+
+footer a {
+    margin-left: 10px;
+}
+
+small {
+    font-family: Raleway Regular;
+    font-size: 0.75rem;
 }
